@@ -43,10 +43,10 @@ const TodoList = ({ todoList, removeTodo }) => {
     <div className="input-list">
       {todoList?.length > 0 ? (
         <ul className="todo-list">
-          {todoList.map((entry, index) => (
+          {todoList.map((todo) => (
             <div className="todo">
-              <li key={index}>{entry}</li>
-              <button className="delete-button" onClick={()=>{removeTodo(entry)}}>
+              <li>{todo}</li>
+              <button className="delete-button" onClick={()=>{removeTodo(todo)}}>
                 <SlTrash size={18}/>
 
               </button>
@@ -69,11 +69,11 @@ const Footer = () => {
         Made with 💖
         </p>
         <p className="socials"> 
-          <a href="https://github.com/adelicia-js" rel="noreferrer" target="_blank"><VscGithub size={25}/></a>
-          <a href="https://www.linkedin.com/in/adelicia/" rel="noreferrer" target="_blank"><SiLinkedin size={25}/></a>
+          <a href="https://github.com/Hemanthrao1404" rel="noreferrer" target="_blank"><VscGithub size={25}/></a>
+          <a href="https://www.linkedin.com/in/hemanth-rao-2a9b03249" rel="noreferrer" target="_blank"><SiLinkedin size={25}/></a>
         </p>
         <p>
-            <a href="https://github.com/adelicia-js/todo-cra" rel="noreferrer" target="_blank" className="source">$Source | 2023 - 2024</a> 
+            <a href="https://github.com/Hemanthrao1404/Todo-List" rel="noreferrer" target="_blank" className="source">$Source | 2023 - 2024</a> 
         </p> 
         
     </>
